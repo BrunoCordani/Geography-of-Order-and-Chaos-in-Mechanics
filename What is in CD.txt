@@ -1,0 +1,102 @@
+
+                    *******************************
+                    *       What is in CD?        *
+                    *******************************
+
+Let us look through the CD and see how to use files and programs.
+
+****************** 1) PhSpGeo.zip *********************************************
+
+This zipped file is the most important of the CD, since it contains the five
+MATLAB programs POINCARE, HAMILTON, LAGRANGE, KEPLER and LAPLACE.
+
+Copy the zipped file on your hard disk, unzip and put the whole folder
+PhSpGeo where you wish but preserving the tree structure of the
+files. Start MATLAB, navigate to the folder e.g. KEPLER/Master and type <Kepler>
+in the MATLAB editor: the relative Graphical User Interface will open; for the
+other four programs act similarly. See the book for the snapshots of
+the Graphical User Interfaces of the five programs.
+
+The code of the programs is written under Windows XP and Windows 7 but has
+been tested also in some distributions of Linux, where nevertheless the fonts
+of the Graphical User Interfaces appear sometimes out of proportion: try to
+fix the problem adjusting the numerical value of font_def in the
+2nd row of the ColorFont.m file.
+
+For some esoteric reason, a few labels of the graphical user interface appear incorrectly placed
+with certain versions of MATLAB. To fix the problem, close and open again the program without
+closing MATLAB.
+
+The code of the three ODE solver "IRK_Gauss", "Dop853" and
+"Odex" is not MATLAB native but requires a
+compilation. We provide the compiled files which should run under Windows32
+and some distributions of Linux (both 32 and 64 bit), but in case you can
+recompile the source code in AddedODEsolver/bin/Source.
+
+Bear in mind that, in the usually very demanding computations of the FMI, the
+user can exploit a multicore machine. Indeed KEPLER, along with the other four
+supplied programs, is able to parallelize the computations in the following
+way. If you possess an n-core machine, in the folder Kepler and
+beside the subfolder Master create n-1 subfolders Slave1, Slave2}, . . . ,
+then copy the whole program KEPLER identically in
+every folder: the n folders must differ only for the name. Start MATLAB then
+KEPLER from the Master folder, set the parameters and click on
+"File/Save setting now". Without closing, start a new instance of MATLAB, then KEPLER from a folder
+SlaveX: you will notice that all the buttons of the computations are
+disabled while the new button "Start Slave" appears.
+Click on this button and KEPLER will wait for the start of the
+master. Redo for every slave, lastly go back to the master and click on
+"Calculate . . .". The whole work will be
+automatically shared among the n cores. The final result is displayed by the master.
+
+Alternatively, in Windows you can create n shortcuts on the desktop, one for
+the Master and the others for the Slaves. In the Portraits folder are
+available the corresponding icons, in colour and in a gray scale for Master
+and Slaves, respectively. In the "Target" field of "Property" you will type
+something like:
+             <C:\MATLAB\bin\matlab.exe /r Kepler>
+and in the "Start in" field you will type the path of the work folder, for example
+      <C:\PhSpGeo\KEPLER\Master> or <C:\PhSpGeo\KEPLER\Slave1>,
+adjusting clearly the paths.
+
+************************* 2) Visualize\_3D.zip ********************************
+
+This zipped file contains the MATLAB program sliceomatic  by Eric Ludlam
+which allows to visualize sets of 3-dimensional data. We provide three
+examples, regarding the resonance distribution in the action space of the
+SQZcrossed system of figure 8.11.
+
+Copy the zipped file on your hard disk, unzip and put the whole folder
+Visualize\_3D where you wish. Then start MATLAB, navigate to this
+folder and type <Visualize_3D>
+in the MATLAB editor: you will be prompted to load data for 3D visualization.
+Enter the SQZcrossed folder and one of the three subfolder
+LGG3_Total}, LGG3_Detail}, LSD_Total}, then double
+click on Volume.mat: the Graphical User Interface of
+sliceomatic will open and you can begin the
+exploration by clicking on the slice controllers, then moving the relative arrows.
+
+************************** 3) Matlab figures **********************************
+
+In the Matlab figures folder the reader may find some pictures in the
+MATLAB format *.fig. Many of them are the original ones reported in the book,
+as attested by the name itself; others are unpublished and concerns some
+details. In general they regard FMI computations which require very
+long times of the order of many days or weeks, even with a multicore machine,
+and may serve as a base to the reader for further explorations. In
+particular, with the "Mouse track" tool in the "Figure" menu one can record the values
+of the coordinate of some points in the picture and use them for the
+computation of the relative orbit, to which a frequency analysis can be applied.
+
+*************************** 4) Euler.mw ***************************************
+
+The program EULER, written in MAPLE language, calculates analytically,
+thus exactly, the motion of a point under the gravitational force of
+two fixed points. The exact integration is useful for
+a comparison with the numerical integration of KEPLER in order to verify its accuracy.
+
+*************************** 5) Portraits **************************************
+
+The folder contains the portraits of the great mathematicians mentioned in the
+titles of the programs and the respective icons, both in colour and in gray scale.
+*******************************************************************************
