@@ -1,0 +1,1 @@
+To compile: under Windows Xp with Gfortran 77
