@@ -1,0 +1,13 @@
+*************************************************************************************************
+                             Regularization method          
+
+ODE solver: ode89, Cycle number: 200, Relative tolerance: 1e-10, Integration time: 7.6759 sec.
+*************************************************************************************************
+                             Regularization method          
+
+ODE solver: ode89, Cycle number: 200, Relative tolerance: 1e-10, Integration time: 32.4663 sec.
+*************************************************************************************************
+                               Standard method          
+
+ODE solver ode89, Cycle number 200, Relative tolerance 1e-10, Integration time 0.90431 sec.
+*************************************************************************************************

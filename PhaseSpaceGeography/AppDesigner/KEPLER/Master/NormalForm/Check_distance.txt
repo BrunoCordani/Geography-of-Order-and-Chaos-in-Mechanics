@@ -1,0 +1,1 @@
+In case, check if the "distance" value is syncronized with "dist1" value in Euler1.m.
