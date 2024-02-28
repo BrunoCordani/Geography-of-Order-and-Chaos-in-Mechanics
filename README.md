@@ -3,9 +3,7 @@
                      	 *       What is in the attached software?     *     
                      	 ***********************************************     
 			   
-Let us examine the attached software and see how to use files and programs. From the site
-          https://github.com/BrunoCordani/Geography-of-Order-and-Chaos-in-Mechanics"
-download the file "Attached Software.zip" and unzip. You will find four folders.
+Let us examine the attached software and see how to use files and programs. You find four folders.
 	       
 **************************** PhaseSpaceGeography ***************************************************
 
@@ -56,18 +54,18 @@ can obtain a 3D image of the Arnold web, which in this case will obviously not b
 lines but of surfaces, also slightly thickened.
 
 In the subfolder "SQZcrossed" you find the source of three examples, regarding the resonance distribution
-in the action space of the Kepler problem with electric and magnetic field. The homonymous "*.mat" files
+in the action space of the Kepler problem with electric and magnetic field. The homonymous *.mat files
 are the corresponding compiled files, ready to be read and stored in the workspace by double-clicking on them.
 
 The best --- but also the most expensive --- way to visualize these examples is to install
 the "Image processing" toolbox of MATLAB and to type "volumeViewer" in the Command Window.
 The graphical interface will appear. Navigate to the "3D Visualization" folder and load
-the "*.mat" files. In the graphical interface click on "Import Volume/Import from Workspace"
+the *.mat files. In the graphical interface click on "Import Volume/Import from Workspace"
 and choose one of the files: the three orthogonal sections with a 3D view will appear.
 Choose "jet" in "Built-in Colormaps" and click on the icon "Slice planes": moving the three cursor
 you can now explore the volume. For other details see the MATLAB documentation.
 
-A less expressive way --- but free of charge --- consists of typing one the name of the three "*.mlapp" files
+A less expressive way --- but free of charge --- consists of typing one the name of the three *.mlapp files
 in the MATLAB editor. The graphical interface will display three sliders --- one for each of the three
 orthogonal views --- and you can begin the exploration by clicking on the slice controllers,
 then moving the relative arrows.
@@ -75,17 +73,17 @@ then moving the relative arrows.
 ******************************* Matlab figures ********************************************************
 
 In the "Matlab figures" folder the reader may find some pictures in the
-MATLAB format "*.fig". Many of them are the original ones reported in the book,
+MATLAB format *.fig. Many of them are the original ones reported in the book,
 as attested by the name itself; others are unpublished and concern some
-details. In general they regard FMI computations which require very
+details. In general they regard computations which require very
 long times of the order of many days or weeks, even with a multicore machine,
 and may serve as a base to the reader for further explorations. In particular,
 one can record the values of the coordinates of some points in the picture and use
 them for the computation of the relative orbit, to which a frequency analysis can be applied.
 
-*********************************** Euler.mw ***********************************************************
+*********************************** Euler ***********************************************************
 
-The program EULER, written in the MAPLE language, calculates
+The program Euler.mw is written in the MAPLE language and calculates
 analytically, thus exactly, the motion of a point under the
 gravitational force of two fixed points. For a detailed study of the Euler
 problem with some examples of the graphic output, see my book on the Kepler Problem. The exact
