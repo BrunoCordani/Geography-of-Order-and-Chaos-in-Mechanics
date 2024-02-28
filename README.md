@@ -1,6 +1,6 @@
 		
                      	 ***********************************************     
-                     	 *       What is in the attached software?     *     
+                     	 ***     What is in the attached software?   ***     
                      	 ***********************************************     
 			   
 Let us examine the attached software and see how to use files and programs. You find four folders.
