@@ -9,7 +9,9 @@ recommend installing the PYTHON distribution called ANACONDA, downloading it fro
 <https://www.anaconda.com/download/>. This distribution
 contains already everything you need. Once installed in Windows, make sure that PYTHON is
 in the PATH, after which it will work transparently, making KEPLER completely similar to
-the other four programs. The things are a bit more complicated in Linux, since it appears
+the other four programs. Warning: It may be that PYTHON is installed in more than one
+directory. Make sure the ANACONDA directory (usually: C:/ProgramData/anaconda3) is in
+the first place. The things are a bit more complicated in Linux, since it appears
 that MATLAB does not inherit the operating system's PATH. We were therefore forced to
 freeze the PYTHON working directory at compile time, consequently it is mandatory to
 install ANACONDA in "/user/bruno/anaconda3".
