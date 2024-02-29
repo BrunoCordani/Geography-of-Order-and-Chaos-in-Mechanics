@@ -49,7 +49,7 @@ can parallelize the work, sharing the computation among several cores.
 Lastly, if you can temporarily access a MATLAB installation, the files "Compile_Win.prj"
 and "Compile_Linux.prj" allow you to compile again the relevant and
 eventually modified program. Warning: to prevent confusion, the modified programs
-cannot be redistributed publicly. To compile:
+cannot be redistributed publicly. For example, to compile POINCARE:
 - Open Matlab in PhaseSpaceGeography
 - Add to path by right-clicking on: "AddedODEsolver" with subfolders,
   "Util"  with subfolders, "Portraits", and  "POINCARE/Master"  with subfolders
